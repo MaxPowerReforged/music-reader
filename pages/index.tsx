@@ -1,9 +1,14 @@
-import { Component } from "react";
-import nav from "../components/nav";
+import { Component } from 'react';
+import NavBar from '../components/nav';
 
 class Welcome extends Component {
   render() {
-    return <h1>Hello</h1>;
+    return (
+      <div>
+        <NavBar></NavBar>
+        <h1>Hello</h1>
+      </div>
+    );
   }
 }
 
