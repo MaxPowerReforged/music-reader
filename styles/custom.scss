@@ -1,6 +1,8 @@
-$theme-colors: (
-  'info': tomato,
-  'danger': teal,
-);
-
 @import '~bootstrap/scss/bootstrap';
+
+main {
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
