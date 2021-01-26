@@ -1,5 +1,4 @@
-import { Component } from 'react';
-import NavBar from '../components/nav';
+import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
 
 const ScoreContainer = dynamic(() => import('../components/scoreContainer'), {
@@ -9,10 +8,9 @@ const ScoreContainer = dynamic(() => import('../components/scoreContainer'), {
 class Welcome extends Component {
   render() {
     return (
-      <div>
-        <NavBar></NavBar>
+      <main>
         <ScoreContainer></ScoreContainer>
-      </div>
+      </main>
     );
   }
 }
